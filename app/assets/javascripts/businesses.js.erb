@@ -1,0 +1,15 @@
+$(document).on('turbolinks:load', function() {
+	$('button[name="guardar"]').on('click', function(event) {
+	event.preventDefault();
+	var at = $("input[name='authenticity_token']").val();
+	var na = $("input[name='nombre']").val();
+	console.log(na);
+
+	});
+});
+
+
+
+//document.addEventListener("turbolinks:load", function() {
+  //  console.log('It works on each visit!');
+//});
